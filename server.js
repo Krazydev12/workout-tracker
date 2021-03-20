@@ -17,7 +17,7 @@ app.use(express.json());
 
 
 
-// mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/workout_trackerdb',
+// mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/workout-trackerdb',
 //  { useNewUrlParser: true, useUnifiedTopology: true }).catch(error => handleError(error));
 
 //or
@@ -31,7 +31,7 @@ mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/workout-tracker
 
 db.Workouts.create({name: "Get 'Er Done Workout Tracker"})
   .then(dbWorkouts => {
-    console.log('log from inside dbWorkouts.create '+dbWorkouts);
+    console.log('log from inside dbworkout.create '+dbworkout);
   })
   .catch( ({message}) => {
     console.log('this is the error:' +message);
